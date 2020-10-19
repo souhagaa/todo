@@ -3,24 +3,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>TODO app</title>
 </head>
 <body onload="showItems()">
     <div id="container">
             <h1>To-do tasks</h1>
-            <input type="text" name="" id="input"><br>
-            <button type="button" id="add">Add Task</button>
-            <button type="button" id="remove">Remove Task</button>
-            <button type="button" id="retrieve">Retrieve completed tasks</button>
-
+            <div class="form-group row">
+              <div class="col-xs-4">
+                <input type="text" placeholder="Enter todo task here ..." class="form-control" id="input"><br>
+              </div>
+            </div>
+            <button type="button" id="add" class="btn btn-success">Add Task</button>
+            <button type="button" id="remove" class="btn btn-danger">Remove Task</button>
+            <button type="button" id="retrieve" class="btn btn-info">Retrieve completed tasks</button>
+        <div class="checkbox">
         <ul id="list">
             <!--<li class="mycheck"><input type="checkbox" id="check">
               <label for="check">Eat</label></li>-->
 
         </ul>
+      </div>
     </div>
     <script src="crud.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>-->
 </body>
 </html>
